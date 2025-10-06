@@ -1,0 +1,29 @@
+import java.util.HashMap;
+
+class Sol {
+    int getCount(String S, int N) {
+        HashMap<String,Integer> h = new HashMap<>();
+        int co = 0;
+        char prev = 0;  
+
+        for(int i = 0; i < S.length(); i++){
+            char ch = S.charAt(i);
+
+            
+            if (ch == prev) continue;
+
+            String c = String.valueOf(ch);
+            h.put(c, h.getOrDefault(c, 0) + 1);
+
+            prev = ch;
+        }
+
+        
+        for (int val : h.values()) {
+            if (val == N)
+                co++;
+        }
+
+        return co;
+    }
+}
