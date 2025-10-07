@@ -1,0 +1,34 @@
+// User function Template for Java
+
+
+class Solution {
+    String modify(String s) {
+        // your code here
+        char[] c=s.toCharArray();
+        String vo="aeiouAEIOU";
+        int l=0,r=s.length()-1;
+        while(l<=r){
+            
+            
+            if(vo.contains(c[l]+"") && vo.contains(c[r]+"")){
+                char temp=c[l];
+                c[l]=c[r];
+                c[r]=temp;
+                l++;
+                r--;
+            }
+            else if(!vo.contains(c[l]+"") && vo.contains(c[r]+"")){
+                l++;
+            }
+            else if(vo.contains(c[l]+"") && !vo.contains(c[r]+"")){
+                r--;
+            }
+            else{
+                l++;
+                r--;
+            }     
+        }
+        return new String(c);
+        
+    }
+}
