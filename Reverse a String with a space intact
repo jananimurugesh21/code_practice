@@ -1,0 +1,36 @@
+// User function Template for Java
+class Solution {
+    String reverseWithSpacesIntact(String s) {
+        // your code here
+        int l=0,r=s.length()-1;
+        char[] c=s.toCharArray();
+        String str="";
+        
+        
+        while(l<r){
+            if(c[l]==' '){
+                
+                l++;
+                continue;
+            }
+            else if( c[r]==' '){
+                r--;
+                continue;
+                
+            }
+            else{
+                char temp=c[l];
+                c[l]=c[r];
+                c[r]=temp;
+                
+            }
+            l++;
+            r--;
+            
+        }
+        return new String(c);
+        
+        
+        
+    }
+}
