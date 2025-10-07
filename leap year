@@ -1,0 +1,11 @@
+// User function Template for Java
+
+class Solution {
+    static boolean isLeap(int n) {
+        // code here
+        if((n%4==0 && n%100!=0) || n%400==0) return true;
+        else return false;
+        
+        
+    }
+}
