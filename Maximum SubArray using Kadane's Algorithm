@@ -1,0 +1,18 @@
+class Solution {
+    int maxSubarraySum(int[] arr) {
+        // Code here
+        int maxi=Integer.MIN_VALUE;
+        int cur=0;
+        
+        for(int i:arr){
+            cur+=i;
+            
+            maxi=Math.max(maxi,cur);
+            cur=Math.max(cur,0);
+            
+            
+            
+        }
+        return maxi;
+    }
+}
