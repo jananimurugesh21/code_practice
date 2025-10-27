@@ -8,7 +8,13 @@
 |1|| Number of Occurrence |JAVA|<a href="https://www.geeksforgeeks.org/problems/number-of-occurrence2259/1?page=1&company=Zoho&sortBy=submissions">GFG</a>|<a href="https://github.com/jananimurugesh21/code_practice/commit/c90ae9fb10bd51274e6d18cabb052628c0ad54d1">View Code</a>|
 |2| Kadane's Algo  | Maximum Subarray |JAVA|<a href="https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1?page=3&company=Zoho&sortBy=difficulty">GFG</a>|<a href="https://github.com/jananimurugesh21/code_practice/commit/612e0c1abe22975504f847eb0671703a14ec19db">View Code</a>|
 |3|The Celebrity Problem| A celebrity is a person who is known to all but does not know anyone at a party. A party is being organized by some people. A square matrix mat[][] of size n*n is used to represent people at the party such that if an element of row i and column j is set to 1 it means ith person knows jth person. You need to return the index of the celebrity in the party, if the celebrity does not exist, return -1. |JAVA|<a href="https://www.geeksforgeeks.org/problems/the-celebrity-problem/1?page=1&company=Zoho&sortBy=submissions">GFG</a>|<a href="https://github.com/jananimurugesh21/code_practice/blob/main/The%20Celebrity%20Problem">View Code</a>|
-|2|| <PROBLEM_NAME> |JAVA|<a href="<PROBLEM LINK GEEKS FOR GEEKS >">GFG</a>|<a href="<GITHUB CODE LINK>">View Code</a>|
+|4|Frequencies in a Limited Array| You are given an array arr[] containing positive integers. The elements in the array arr[] range from  1 to n (where n is the size of the array), and some numbers may be repeated or absent. Your have to count the frequency of all numbers in the range 1 to n and return an array of size n such that result[i] represents the frequency of the number i (1-based indexing).
+
+Examples:
+
+Input: arr[] = [2, 3, 2, 3, 5]
+Output: [0, 2, 2, 0, 1]
+Explanation: We have: 1 occurring 0 times, 2 occurring 2 times, 3 occurring 2 times, 4 occurring 0 times, and 5 occurring 1 time. |JAVA|<a href="https://www.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/1?page=1&company=Zoho&sortBy=submissions">GFG</a>|<a href="https://github.com/jananimurugesh21/code_practice/commit/9f61393ad3cac58e74f7e4b7d6c57d5bab8e9a50">View Code</a>|
 
 |2|| <PROBLEM_NAME> |JAVA|<a href="<PROBLEM LINK GEEKS FOR GEEKS >">GFG</a>|<a href="<GITHUB CODE LINK>">View Code</a>|
 
