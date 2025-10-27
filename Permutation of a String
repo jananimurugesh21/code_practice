@@ -1,0 +1,23 @@
+class Solution {
+    
+    public void permute(String s,String res,Set<String> set){
+        if(s.length()==0){
+            set.add(res);
+            return;
+        }
+        
+        for(int i=0;i<s.length();i++){
+            char ch=s.charAt(i);
+            String rem=s.substring(0,i)+s.substring(i+1);
+            permute(rem,res+ch,set);
+        }
+    }
+    public ArrayList<String> findPermutation(String s) {
+        // Code here
+        Set<String> set=new HashSet<>();
+        permute(s,"",set);
+        ArrayList<String> l=new ArrayList<>(set);
+        return l;
+        
+    }
+}
