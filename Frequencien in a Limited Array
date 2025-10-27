@@ -1,0 +1,18 @@
+class Solution {
+    public List<Integer> frequencyCount(int[] arr) {
+        // code here
+        int n=arr.length;
+        
+        int[] a=new int[n];
+        List<Integer> l=new ArrayList<>();
+        
+        for(int i:arr){
+            a[i-1]=a[i-1]+1;
+        }
+        
+        for(int i:a){
+            l.add(i);
+        }
+        return l;
+    }
+}
