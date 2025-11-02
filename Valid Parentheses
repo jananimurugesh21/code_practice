@@ -1,0 +1,39 @@
+class Solution {
+    public boolean isValid(String str) {
+        Stack s=new Stack();
+        if(str.length()==1){
+            return false;
+        }
+        for(int i=0;i<str.length();i++){
+            char cur=str.charAt(i);
+
+            if (cur=='('|| cur=='{' || cur=='['){
+                s.add(cur);
+            }
+            else{
+                if(s.isEmpty())
+                return false;
+                char p=(char)s.peek();
+
+                char a;
+
+                if(cur==')')
+                a='(';
+                else if(cur=='}')
+                a='{';
+                else
+                a='[';
+
+                if(a==p)
+                s.pop();
+                else
+                return false;
+            }
+        }
+        if(s.isEmpty())
+        return true;
+        else
+        return false;
+        
+    }
+}
