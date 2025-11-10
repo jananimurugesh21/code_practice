@@ -1,0 +1,16 @@
+/*Complete the function below*/
+class Solution {
+    public int findExtra(int a[], int b[]) {
+        // add code here.
+        int l=0;
+        while(l<b.length){
+            if(a[l]!=b[l])
+            
+            return l;
+        l++;
+        }
+        if(l<a.length)
+            return l;
+        return -1;
+    }
+}
